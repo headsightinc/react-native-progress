@@ -136,6 +136,7 @@ export class ProgressCircle extends Component {
                 }
               : undefined
           }
+          color={fill}
         >
           {unfilledColor && progressValue !== 1 ? (
             <Shape
@@ -174,6 +175,7 @@ export class ProgressCircle extends Component {
               stroke={borderColor || color}
               strokeCap={strokeCap}
               strokeWidth={border}
+              fill='transparent'
             />
           ) : (
             false
